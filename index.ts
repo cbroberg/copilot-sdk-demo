@@ -1,7 +1,7 @@
 import { CopilotClient } from "@github/copilot-sdk";
 
 const client = new CopilotClient();
-const session = await client.createSession({ model: "gpt-4.1" });
+const session = await client.createSession({ model: "claude-sonnet-4.6" });
 
 const response = await session.sendAndWait({ prompt: "What is 2 + 2?" });
 console.log(response?.data.content);
